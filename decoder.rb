@@ -36,3 +36,9 @@ def decode_word(word)
     decode_char(letter)
   end.join
 end
+
+def decode_message(message)
+  message.split(/   /).map do |word|
+    decode_word(word)
+  end.join(' ')
+end

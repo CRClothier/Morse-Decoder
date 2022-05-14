@@ -30,3 +30,9 @@
 def decode_letter(letter)
   @morse_code_char[letter]
 end
+
+def decode_word(word)
+  word.split(/ /).map do |letter|
+    decode_char(letter)
+  end.join
+end

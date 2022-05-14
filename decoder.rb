@@ -27,3 +27,6 @@
   '--..' => 'Z'
 }
 
+def decode_char(char)
+  @morse_code_char[char]
+end
